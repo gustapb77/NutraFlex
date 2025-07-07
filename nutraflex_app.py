@@ -17,7 +17,7 @@ users_db = {
 
 # Função para chamar a API da Gemini
 def call_gemini(prompt, api_key):
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={AIzaSyA80-lpm2_GCi_Wdm7B-mcgzETFeSrszbw}"
     headers = {"Content-Type": "application/json"}
     payload = {
         "contents": [{"parts": [{"text": prompt}]}]
@@ -43,7 +43,7 @@ def login_screen():
 
 # TELA PRINCIPAL
 def main_app():
-    st.sidebar.title("NutraFlex 🧠💪")
+    st.sidebar.title("NutraFlex")
     menu = st.sidebar.radio("Menu", ["Personal Particular", "Agenda Semanal", "Produtos"])
 
     st.sidebar.markdown("---")
